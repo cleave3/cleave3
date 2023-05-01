@@ -1,4 +1,4 @@
-### Hi, I am Cleave ✨  :man_technologist
+### Hi, I am Cleave ✨  :man_technologist:
 >
 > A Software Engineer based in Lagos, Nigeria :nigeria:
 > I have a passion for learning and solving problems with technology :computer:
