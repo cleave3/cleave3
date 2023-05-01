@@ -1,4 +1,71 @@
-### Hi there 👋
+### Hi, I am Cleave ✨  :man_technologist
+>
+> A Software Engineer based in Lagos, Nigeria :nigeria:
+> I have a passion for learning and solving problems with technology :computer:
+
+  
+## Menu
+
+- [Technology Stack](#technologies)
+- [Github Stats](#my-github-stats)
+- [Github Trophies](#github-trophies)
+- [:stopwatch: Wakatime Stats](#wakatime-stats)
+- [📱 Contact](#-you-can-reach-me-here)
+
+### Technologies
+
+- - - -
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-1572b6?style=for-the-badge&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-blue?style=for-the-badge&logo=react&logoColor=white" />
+  <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-yellow?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/GoLang-teal?style=for-the-badge&logo=go&logoColor=white" />
+  <img src="https://img.shields.io/badge/PHP-purple?style=for-the-badge&logo=php&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-blue?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/MongoDB-green?style=for-the-badge&logo=mongoDB&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQL-teal?style=for-the-badge&logo=mysql&logoColor=white" />
+</p>
+
+### My Github Stats
+
+- - - -
+  
+[![Cleave's GitHub stats](https://github-readme-stats.vercel.app/api?username=cleave3&count_private=true&show_icons=true&theme=radical)](https://github.com/cleave3)
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=cleave3&langs_count=8&layout=compact&theme=radical)](https://github.com/cleave3)
+
+## Github Trophies
+>
+> Expand to see my Github trophies
+
+<details>
+  <summary>
+    Github Trophies
+  </summary>
+  <p>
+    <img src="https://github-profile-trophy.vercel.app/?username=cleave3&theme=radical&column=6">
+  </p>
+</details>
+
+## Wakatime Stats
+<!-- > Expand to see details -->
+<figure><embed src="https://wakatime.com/share/@44c51cf2-6fc8-499d-a944-988b44312088/9fb94e53-9611-4d3e-b145-d9a3088d5ea4.svg"></embed></figure>
+  
+### 📫 You can reach me here  
+
+<a href="https://www.linkedin.com/in/david-benard-196961121/" target="_blank">
+    <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+<a href="mailto:davidbenard.bd@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/mail-%230077B5.svg?&style=for-the-badge&logo=gmail&logoColor=white" />
+ </a>
+ <a href="https://twitter.com/dav3ly" target="_blank">
+  <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white">
+ </a>
 
 <!--
 **cleave3/cleave3** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
