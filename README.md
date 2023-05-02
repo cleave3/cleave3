@@ -50,7 +50,7 @@
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=cleave3&langs_count=8&layout=compact&theme=radical)](https://github.com/cleave3)
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com?user=cleave3&theme=vue-dark&hide_border=true&date_format=j%20M%5B%20Y%5D" alt="cleave3's streak" /></p>
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=cleave3&theme=one-dark-pro&date_format=M%20j%5B%2C%20Y%5D&mode=weekly)](https://git.io/streak-stats)
 
 ## Github Trophies
 
