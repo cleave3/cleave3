@@ -1,0 +1,40 @@
+name: Update Latest Projects
+
+on:
+    schedule:
+        - cron: "0 */12 * * *" # Runs every 12 hours
+    workflow_dispatch:
+
+jobs:
+    update-projects:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v5
+              with:
+                  fetch-depth: 0
+            - name: Fetch repository list
+              id: repos
+              uses: yi-Xu-0100/repo-list-generator@v1.1.1
+              with:
+                  user: cleave3
+                  max_page: 5
+            - name: Generate project list and update README
+              run: |
+                  echo "##  Latest Projects" > latest-section.md
+                  IFS=',' read -ra PROJECTS <<< "${{ steps.repos.outputs.repoList }}"
+                  for repo in "${PROJECTS[@]}"; do
+                    repo_name=$(echo "$repo" | awk -F'/' '{print $2}')
+                    repo_json=$(curl -s "https://api.github.com/repos/cleave3/$repo_name")
+                    description=$(echo "$repo_json" | jq -r '.description // "- No description available ."')
+                    stars=$(echo "$repo_json" | jq -r '.stargazers_count')
+                    updated=$(echo "$repo_json" | jq -r '.updated_at' | cut -d'T' -f1)
+                    echo "- **[$repo_name](https://github.com/cleave3/$repo_name)** – $description ⭐ $stars – Updated: $updated" >> latest-section.md
+                  done
+                  sed -i '/<!-- LATEST-PROJECTS:START -->/,/<!-- LATEST-PROJECTS:END -->/c\<!-- LATEST-PROJECTS:START -->\n'"$(cat latest-section.md)"'\n<!-- LATEST-PROJECTS:END -->' README.md
+            - name: Commit changes
+              run: |
+                  git config --global user.name "github-actions[bot]"
+                  git config --global user.email "action@github.com"
+                  git add README.md
+                  git commit -m "chore: Update latest projects" || echo "No changes to commit"
+                  git push

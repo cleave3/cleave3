@@ -1,7 +1,10 @@
 <h1 align="center">Hi there, I'm Cleave ✨👨‍💻</h1>
 <p align="center">
-  <b>Software Engineer | Problem Solver | Lifelong Learner</b>  
-  <br/>
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=24&duration=3000&pause=500&color=1572b6&center=true&vCenter=true&width=500&lines=Senior+Software+Engineer;Problem+Solver;Cloud+%26+Backend+Developer;FullStack+Developer;Lifelong+Learner;Open+Source+Contributor" alt="Typing SVG" />
+  </a>
+</p>
+<p align="center">
   Based in Lagos, Nigeria 🇳🇬  
   Passionate about building impactful solutions with technology 💻  
 </p>
@@ -21,7 +24,9 @@
 - [📂 Menu](#-menu)
 - [🛠️ Technologies](#️-technologies)
 - [📊 GitHub Stats](#-github-stats)
-- [⏳ Coding Activity (WakaTime)](#-coding-activity-wakatime)
+- [🆕 Latest Projects](#-latest-projects)
+- [📫 Contact Me](#-contact-me)
+<!-- - [⏳ Coding Activity (WakaTime)](#-coding-activity-wakatime) -->
 - [📫 Contact Me](#-contact-me)
 
 ---
@@ -68,11 +73,11 @@
   <!-- <a href="https://github.com/cleave3">
     <img src="https://github-readme-stats.vercel.app/api?username=cleave3&count_private=true&show_icons=true&theme=radical" alt="GitHub Stats" />
   </a> -->
-  <br/>
+  <!-- <br/> -->
   <a href="https://github.com/cleave3">
     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=cleave3&langs_count=8&layout=compact&theme=radical" alt="Top Languages" />
   </a>
-  <br/>
+  <!-- <br/> -->
   <a href="https://git.io/streak-stats">
     <img src="https://github-readme-streak-stats.herokuapp.com?user=cleave3&theme=one-dark-pro&date_format=M%20j%5B%2C%20Y%5D&mode=weekly" alt="GitHub Streak" />
   </a>
@@ -80,26 +85,30 @@
   <img src="https://github-profile-trophy.vercel.app/?username=cleave3&theme=radical&column=6" alt="Trophies" /> -->
 </p>
 
----
+<!-- --- -->
 
-## ⏳ Coding Activity (WakaTime)
+<!-- ## ⏳ Coding Activity (WakaTime)
 <figure>
   <img src="https://wakatime.com/share/@44c51cf2-6fc8-499d-a944-988b44312088/00aa8dce-ad08-409e-84a2-9cd4d632fa96.svg"></img>
-</figure>
+</figure> -->
+
+---
+
+## 🆕 Latest Projects  
+
+<!-- LATEST-PROJECTS:START -->
+<!-- LATEST-PROJECTS:END -->
 
 ---
 
 ## 📫 Contact Me  
 
-<p align="center">
+<p align="left">
   <a href="https://www.linkedin.com/in/cleave-owhiroro-113b57145/" target="_blank">
     <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
   <a href="mailto:owhiroroeghele@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/mail-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
-  <a href="https://twitter.com/owhiguy" target="_blank">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2.svg?style=for-the-badge&logo=twitter&logoColor=white">
   </a>
 </p>
 
