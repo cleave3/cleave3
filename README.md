@@ -65,9 +65,9 @@
 ## 📊 GitHub Stats  
 
 <p align="center">
-  <a href="https://github.com/cleave3">
+  <!-- <a href="https://github.com/cleave3">
     <img src="https://github-readme-stats.vercel.app/api?username=cleave3&count_private=true&show_icons=true&theme=radical" alt="GitHub Stats" />
-  </a>
+  </a> -->
   <br/>
   <a href="https://github.com/cleave3">
     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=cleave3&langs_count=8&layout=compact&theme=radical" alt="Top Languages" />
@@ -76,15 +76,15 @@
   <a href="https://git.io/streak-stats">
     <img src="https://github-readme-streak-stats.herokuapp.com?user=cleave3&theme=one-dark-pro&date_format=M%20j%5B%2C%20Y%5D&mode=weekly" alt="GitHub Streak" />
   </a>
-  <br/>
-  <img src="https://github-profile-trophy.vercel.app/?username=cleave3&theme=radical&column=6" alt="Trophies" />
+  <!-- <br/>
+  <img src="https://github-profile-trophy.vercel.app/?username=cleave3&theme=radical&column=6" alt="Trophies" /> -->
 </p>
 
 ---
 
 ## ⏳ Coding Activity (WakaTime)
 <figure>
-  <embed src="https://wakatime.com/share/@44c51cf2-6fc8-499d-a944-988b44312088/00aa8dce-ad08-409e-84a2-9cd4d632fa96.svg"></embed>
+  <img src="https://wakatime.com/share/@44c51cf2-6fc8-499d-a944-988b44312088/00aa8dce-ad08-409e-84a2-9cd4d632fa96.svg"></img>
 </figure>
 
 ---
