@@ -97,9 +97,56 @@
 ## 🆕 Latest Projects  
 
 <!-- LATEST-PROJECTS:START -->
-- Project Alpha 🚀
-- Project Beta ⚡
-- Project Gamma 🌟
+##  Latest Projects
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
+- **[](https://github.com/cleave3/)** – - No description available . ⭐ null – Updated: null
 <!-- LATEST-PROJECTS:END -->
 
 ---
