@@ -1,40 +1,45 @@
-name: Update Latest Projects
+name: Update README with Latest Projects
 
 on:
-    schedule:
-        - cron: "0 */12 * * *" # Runs every 12 hours
-    workflow_dispatch:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *" # every day at midnight UTC
 
 jobs:
-    update-projects:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v5
-              with:
-                  fetch-depth: 0
-            - name: Fetch repository list
-              id: repos
-              uses: yi-Xu-0100/repo-list-generator@v1.1.1
-              with:
-                  user: cleave3
-                  max_page: 5
-            - name: Generate project list and update README
-              run: |
-                  echo "##  Latest Projects" > latest-section.md
-                  IFS=',' read -ra PROJECTS <<< "${{ steps.repos.outputs.repoList }}"
-                  for repo in "${PROJECTS[@]}"; do
-                    repo_name=$(echo "$repo" | awk -F'/' '{print $2}')
-                    repo_json=$(curl -s "https://api.github.com/repos/cleave3/$repo_name")
-                    description=$(echo "$repo_json" | jq -r '.description // "- No description available ."')
-                    stars=$(echo "$repo_json" | jq -r '.stargazers_count')
-                    updated=$(echo "$repo_json" | jq -r '.updated_at' | cut -d'T' -f1)
-                    echo "- **[$repo_name](https://github.com/cleave3/$repo_name)** – $description ⭐ $stars – Updated: $updated" >> latest-section.md
-                  done
-                  sed -i '/<!-- LATEST-PROJECTS:START -->/,/<!-- LATEST-PROJECTS:END -->/c\<!-- LATEST-PROJECTS:START -->\n'"$(cat latest-section.md)"'\n<!-- LATEST-PROJECTS:END -->' README.md
-            - name: Commit changes
-              run: |
-                  git config --global user.name "github-actions[bot]"
-                  git config --global user.email "action@github.com"
-                  git add README.md
-                  git commit -m "chore: Update latest projects" || echo "No changes to commit"
-                  git push
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate latest projects section
+        run: |
+          # Generate your latest projects markdown file
+          # Replace this with your actual generation logic
+          echo "- Project Alpha 🚀" > latest-section.md
+          echo "- Project Beta ⚡" >> latest-section.md
+          echo "- Project Gamma 🌟" >> latest-section.md
+
+      - name: Update README safely
+        run: |
+          # Use awk to safely replace between markers without breaking markdown
+          awk -v new="$(cat latest-section.md)" '
+            BEGIN { in_block=0 }
+            /<!-- LATEST-PROJECTS:START -->/ { print; print new; in_block=1; next }
+            /<!-- LATEST-PROJECTS:END -->/ { in_block=0 }
+            !in_block
+          ' README.md > README.tmp && mv README.tmp README.md
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          if ! git diff --quiet; then
+            git add README.md
+            git commit -m "chore: update latest projects in README"
+            git push
+          else
+            echo "No changes to commit."
+          fi
