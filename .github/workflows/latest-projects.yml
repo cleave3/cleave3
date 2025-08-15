@@ -1,58 +1,55 @@
 name: Update README with Latest Projects
 
 on:
-    workflow_dispatch:
     schedule:
-        - cron: "0 0 * * *" # every day at midnight UTC
+        - cron: "0 * * * *" # every hour
+    workflow_dispatch:
 
 permissions:
-    contents: write # ✅ Required for pushing changes with GITHUB_TOKEN
+    contents: write # Needed to push changes to README
 
 jobs:
-    update-projects:
+    update-readme:
         runs-on: ubuntu-latest
-        permissions:
-            contents: write # allow committing changes back to repo
-
         steps:
-            - uses: actions/checkout@v5
-              with:
-                  fetch-depth: 0
-                  token: ${{ secrets.GITHUB_TOKEN }} # use built-in token
+            - name: Checkout repository
+              uses: actions/checkout@v4
 
-            - name: Fetch repository list
+            - name: Get list of latest repos
               id: repos
-              uses: yi-Xu-0100/repo-list-generator@v1.1.1
-              with:
-                  user: cleave3
-                  max_page: 5
+              run: |
+                  repoList=$(curl -s "https://api.github.com/users/cleave3/repos?sort=updated&per_page=5" \
+                    | jq -r '.[].full_name' | paste -sd "," -)
+                  echo "repoList=$repoList" >> $GITHUB_OUTPUT
 
             - name: Generate project list and update README
+              env:
+                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               run: |
-                echo "##  Latest Projects" > latest-section.md
-                IFS=',' read -ra PROJECTS <<< "${{ steps.repos.outputs.repoList }}"
-                for repo in "${PROJECTS[@]}"; do
+                  echo "##  Latest Projects" > latest-section.md
+                  IFS=',' read -ra PROJECTS <<< "${{ steps.repos.outputs.repoList }}"
+                  for repo in "${PROJECTS[@]}"; do
                     repo_name=$(echo "$repo" | awk -F'/' '{print $2}')
-                    repo_json=$(curl -s "https://api.github.com/repos/cleave3/$repo_name")
-                    description=$(echo "$repo_json" | jq -r '.description // "- No description available ."')
-                    stars=$(echo "$repo_json" | jq -r '.stargazers_count')
-                    updated=$(echo "$repo_json" | jq -r '.updated_at' | cut -d'T' -f1)
-                    echo "- **[$repo_name](https://github.com/cleave3/$repo_name)** – $description ⭐ $stars – Updated: $updated" >> latest-section.md
-                done
+                    repo_json=$(curl -s -H "Authorization: token $GH_TOKEN" "https://api.github.com/repos/cleave3/$repo_name")
+                    description=$(echo "$repo_json" | jq -r '.description // "No description available."')
+                    stars=$(echo "$repo_json" | jq -r '.stargazers_count // 0')
+                    updated=$(echo "$repo_json" | jq -r '.updated_at // empty' | cut -d'T' -f1)
+                    echo "- **[$repo_name](https://github.com/cleave3/$repo_name)** – $description ⭐ $stars – Updated: ${updated:-Unknown}" >> latest-section.md
+                  done
 
-                awk -v new="$(cat latest-section.md)" '
+                  awk -v new="$(cat latest-section.md)" '
                     BEGIN { in_block=0 }
                     /<!-- LATEST-PROJECTS:START -->/ { print; print new; in_block=1; next }
                     /<!-- LATEST-PROJECTS:END -->/ { in_block=0 }
                     !in_block
-                ' README.md > README.tmp && mv README.tmp README.md
+                  ' README.md > README.tmp && mv README.tmp README.md
 
-            - name: Commit changes
+            - name: Commit and push changes
               run: |
-                  git config --global user.name "github-actions[bot]"
-                  git config --global user.email "github-actions[bot]@users.noreply.github.com"
+                  git config --local user.name "github-actions[bot]"
+                  git config --local user.email "github-actions[bot]@users.noreply.github.com"
                   git add README.md
-                  git commit -m "chore: Update latest projects" || echo "No changes to commit"
+                  git commit -m "Updated latest projects section" || echo "No changes to commit"
                   git push
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
