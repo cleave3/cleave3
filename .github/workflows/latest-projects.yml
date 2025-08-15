@@ -29,17 +29,23 @@ jobs:
 
             - name: Generate project list and update README
               run: |
-                  echo "##  Latest Projects" > latest-section.md
-                  IFS=',' read -ra PROJECTS <<< "${{ steps.repos.outputs.repoList }}"
-                  for repo in "${PROJECTS[@]}"; do
+                echo "##  Latest Projects" > latest-section.md
+                IFS=',' read -ra PROJECTS <<< "${{ steps.repos.outputs.repoList }}"
+                for repo in "${PROJECTS[@]}"; do
                     repo_name=$(echo "$repo" | awk -F'/' '{print $2}')
                     repo_json=$(curl -s "https://api.github.com/repos/cleave3/$repo_name")
-                    description=$(echo "$repo_json" | jq -r '.description // "- No description available."')
+                    description=$(echo "$repo_json" | jq -r '.description // "- No description available ."')
                     stars=$(echo "$repo_json" | jq -r '.stargazers_count')
                     updated=$(echo "$repo_json" | jq -r '.updated_at' | cut -d'T' -f1)
                     echo "- **[$repo_name](https://github.com/cleave3/$repo_name)** – $description ⭐ $stars – Updated: $updated" >> latest-section.md
-                  done
-                  sed -i '/<!-- LATEST-PROJECTS:START -->/,/<!-- LATEST-PROJECTS:END -->/c\<!-- LATEST-PROJECTS:START -->\n'"$(cat latest-section.md)"'\n<!-- LATEST-PROJECTS:END -->' README.md
+                done
+
+                awk -v new="$(cat latest-section.md)" '
+                    BEGIN { in_block=0 }
+                    /<!-- LATEST-PROJECTS:START -->/ { print; print new; in_block=1; next }
+                    /<!-- LATEST-PROJECTS:END -->/ { in_block=0 }
+                    !in_block
+                ' README.md > README.tmp && mv README.tmp README.md
 
             - name: Commit changes
               run: |
