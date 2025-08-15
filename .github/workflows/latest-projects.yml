@@ -1,45 +1,50 @@
 name: Update README with Latest Projects
 
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: "0 0 * * *" # every day at midnight UTC
+    workflow_dispatch:
+    schedule:
+        - cron: "0 0 * * *" # every day at midnight UTC
+
+permissions:
+    contents: write # ✅ Required for pushing changes with GITHUB_TOKEN
 
 jobs:
-  update-readme:
-    runs-on: ubuntu-latest
+    update-readme:
+        runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+              with:
+                  token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Generate latest projects section
-        run: |
-          # Generate your latest projects markdown file
-          # Replace this with your actual generation logic
-          echo "- Project Alpha 🚀" > latest-section.md
-          echo "- Project Beta ⚡" >> latest-section.md
-          echo "- Project Gamma 🌟" >> latest-section.md
+            - name: Generate latest projects section
+              run: |
+                  # Generate your latest projects markdown file
+                  # Replace this with your actual generation logic
+                  echo "- Project Alpha 🚀" > latest-section.md
+                  echo "- Project Beta ⚡" >> latest-section.md
+                  echo "- Project Gamma 🌟" >> latest-section.md
 
-      - name: Update README safely
-        run: |
-          # Use awk to safely replace between markers without breaking markdown
-          awk -v new="$(cat latest-section.md)" '
-            BEGIN { in_block=0 }
-            /<!-- LATEST-PROJECTS:START -->/ { print; print new; in_block=1; next }
-            /<!-- LATEST-PROJECTS:END -->/ { in_block=0 }
-            !in_block
-          ' README.md > README.tmp && mv README.tmp README.md
+            - name: Update README safely
+              run: |
+                  # Use awk to safely replace between markers without breaking markdown
+                  awk -v new="$(cat latest-section.md)" '
+                    BEGIN { in_block=0 }
+                    /<!-- LATEST-PROJECTS:START -->/ { print; print new; in_block=1; next }
+                    /<!-- LATEST-PROJECTS:END -->/ { in_block=0 }
+                    !in_block
+                  ' README.md > README.tmp && mv README.tmp README.md
 
-      - name: Commit and push changes
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+            - name: Commit and push changes
+              run: |
+                  git config --global user.name "github-actions[bot]"
+                  git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          if ! git diff --quiet; then
-            git add README.md
-            git commit -m "chore: update latest projects in README"
-            git push
-          else
-            echo "No changes to commit."
-          fi
+                  if ! git diff --quiet; then
+                    git add README.md
+                    git commit -m "chore: update latest projects in README"
+                    git push
+                  else
+                    echo "No changes to commit."
+                  fi
