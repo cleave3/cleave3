@@ -98,8 +98,8 @@
 
 <!-- LATEST-PROJECTS:START -->
 ##  Latest Projects
-- **[cleave3](https://github.com/cleave3/cleave3)** – No description available. ⭐ 0 – Updated: 2026-01-29
 - **[owi-framework](https://github.com/cleave3/owi-framework)** – My PHP project boiler plate ⭐ 0 – Updated: 2026-01-29
+- **[cleave3](https://github.com/cleave3/cleave3)** – No description available. ⭐ 0 – Updated: 2026-01-29
 - **[corpman](https://github.com/cleave3/corpman)** – No description available. ⭐ 0 – Updated: 2025-07-01
 - **[confidebat_website](https://github.com/cleave3/confidebat_website)** – No description available. ⭐ 0 – Updated: 2025-06-19
 - **[json_db](https://github.com/cleave3/json_db)** – No description available. ⭐ 0 – Updated: 2025-05-29
