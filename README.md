@@ -98,6 +98,11 @@
 
 <!-- LATEST-PROJECTS:START -->
 ##  Latest Projects
+- **[cleave3](https://github.com/cleave3/cleave3)** – No description available. ⭐ 0 – Updated: 2026-02-14
+- **[antigravity-awesome-skills](https://github.com/cleave3/antigravity-awesome-skills)** – The Ultimate Collection of 800+ Agentic Skills for Claude Code/Antigravity/Cursor. Battle-tested, high-performance skills for AI agents including official skills from Anthropic and Vercel. ⭐ 0 – Updated: 2026-02-12
+- **[owi-framework](https://github.com/cleave3/owi-framework)** – My PHP project boiler plate ⭐ 0 – Updated: 2026-01-29
+- **[corpman](https://github.com/cleave3/corpman)** – No description available. ⭐ 0 – Updated: 2025-07-01
+- **[confidebat_website](https://github.com/cleave3/confidebat_website)** – No description available. ⭐ 0 – Updated: 2025-06-19
 <!-- LATEST-PROJECTS:END -->
 
 ---
