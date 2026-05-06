@@ -98,11 +98,11 @@
 
 <!-- LATEST-PROJECTS:START -->
 ##  Latest Projects
-- **[cleave3](https://github.com/cleave3/cleave3)** – No description available. ⭐ 0 – Updated: 2026-05-06
-- **[flutter_billing_app](https://github.com/cleave3/flutter_billing_app)** – No description available. ⭐ 0 – Updated: 2026-03-06
-- **[antigravity-awesome-skills](https://github.com/cleave3/antigravity-awesome-skills)** – The Ultimate Collection of 800+ Agentic Skills for Claude Code/Antigravity/Cursor. Battle-tested, high-performance skills for AI agents including official skills from Anthropic and Vercel. ⭐ 0 – Updated: 2026-02-12
-- **[owi-framework](https://github.com/cleave3/owi-framework)** – My PHP project boiler plate ⭐ 0 – Updated: 2026-01-29
-- **[corpman](https://github.com/cleave3/corpman)** – No description available. ⭐ 0 – Updated: 2025-07-01
+- **[bloom](https://github.com/cleave3/bloom)** – No description available. ⭐ 0 – Updated: 2026-05-06
+- **[corpman-client](https://github.com/cleave3/corpman-client)** – No description available. ⭐ 0 – Updated: 2026-05-06
+- **[corpman-api](https://github.com/cleave3/corpman-api)** – No description available. ⭐ 0 – Updated: 2026-05-06
+- **[creditapp-api](https://github.com/cleave3/creditapp-api)** – No description available. ⭐ 0 – Updated: 2026-05-06
+- **[resume-ai](https://github.com/cleave3/resume-ai)** – No description available. ⭐ 0 – Updated: 2026-05-06
 <!-- LATEST-PROJECTS:END -->
 
 ---
