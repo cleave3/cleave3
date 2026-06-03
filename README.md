@@ -1,6 +1,6 @@
 <h1 align="center">Hi there, I'm Cleave ✨👨‍💻</h1>
 <p align="center">
-  <a href="https://git.io/typing-svg">
+  <a href="https://github.com/ashutoshgwarikar/Github-Readme-Typing-SVG">
     <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=24&duration=3000&pause=500&color=1572b6&center=true&vCenter=true&width=500&lines=Senior+Software+Engineer;Problem+Solver;Cloud+%26+Backend+Developer;FullStack+Developer;Lifelong+Learner;Open+Source+Contributor" alt="Typing SVG" />
   </a>
 </p>
@@ -26,7 +26,7 @@
 - [📊 GitHub Stats](#-github-stats)
 - [📫 Contact Me](#-contact-me)
 <!-- - [⏳ Coding Activity (WakaTime)](#-coding-activity-wakatime) -->
-- [📫 Contact Me](#-contact-me)
+<!-- - [📫 Contact Me](#-contact-me) -->
 
 ---
 
@@ -41,12 +41,13 @@
   <img src="https://img.shields.io/badge/React-61DBFB?style=for-the-badge&logo=react&logoColor=black" />
   <img src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white" />
   <br/>
-  <!-- Backend -->
+  <!-- Backend & DevOps -->
   <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" />
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
   <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" />
   <br/>
   <!-- Databases -->
   <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />
@@ -69,42 +70,16 @@
 ## 📊 GitHub Stats  
 
 <p align="center">
-  <!-- <a href="https://github.com/cleave3">
-    <img src="https://github-readme-stats.vercel.app/api?username=cleave3&count_private=true&show_icons=true&theme=radical" alt="GitHub Stats" />
-  </a> -->
-  <!-- <br/> -->
   <a href="https://github.com/cleave3">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=cleave3&langs_count=8&layout=compact&theme=radical" alt="Top Languages" />
+    <img src="https://github-readme-stats.shion.dev/api/top-langs?username=cleave3&langs_count=8&layout=compact&theme=nightowl" alt="Top Languages" />
   </a>
   <!-- <br/> -->
-  <a href="https://git.io/streak-stats">
+  <a href="https://github.com/denvercoder1/github-readme-streak-stats">
     <img src="https://github-readme-streak-stats.herokuapp.com?user=cleave3&theme=one-dark-pro&date_format=M%20j%5B%2C%20Y%5D&mode=weekly" alt="GitHub Streak" />
   </a>
-  <!-- <br/>
-  <img src="https://github-profile-trophy.vercel.app/?username=cleave3&theme=radical&column=6" alt="Trophies" /> -->
 </p>
 
-<!-- --- -->
-
-<!-- ## ⏳ Coding Activity (WakaTime)
-<figure>
-  <img src="https://wakatime.com/share/@44c51cf2-6fc8-499d-a944-988b44312088/00aa8dce-ad08-409e-84a2-9cd4d632fa96.svg"></img>
-</figure> -->
-
 ---
-
-<!-- ## 🆕 Latest Projects   -->
-
-<!-- LATEST-PROJECTS:START -->
-<!-- ##  Latest Projects
-- **[cleave3](https://github.com/cleave3/cleave3)** – No description available. ⭐ 0 – Updated: 2025-08-15
-- **[corpman](https://github.com/cleave3/corpman)** – No description available. ⭐ 0 – Updated: 2025-07-01
-- **[confidebat_website](https://github.com/cleave3/confidebat_website)** – No description available. ⭐ 0 – Updated: 2025-06-19
-- **[json_db](https://github.com/cleave3/json_db)** – No description available. ⭐ 0 – Updated: 2025-05-29
-- **[react-native-animated-components](https://github.com/cleave3/react-native-animated-components)** – No description available. ⭐ 0 – Updated: 2025-02-06 -->
-<!-- LATEST-PROJECTS:END -->
-
-<!-- --- -->
 
 ## 📫 Contact Me  
 
